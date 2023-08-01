@@ -16,15 +16,19 @@ Rails 7.0.6
 
 ### Api Info
 
-We will be using: 
-1. The NREL API:
-  * Alternate fuel station - [nearest station endpoint](https://developer.nrel.gov/docs/transportation/alt-fuel-stations-v1/nearest/): `/api/alt-fuel-stations/v1/nearest`
-  * Sign up for a key [here](https://developer.nrel.gov/signup/)
-2. The MapQuest Directions API:
-  * [endpoint](https://developer.mapquest.com/documentation/directions-api/route/get/): `/directions/v2/route`
-  * Sign up for a key [here](https://developer.mapquest.com/)
+We will be using:
 
-### User Story 
+1. The NREL API:
+
+- Alternate fuel station - [nearest station endpoint](https://developer.nrel.gov/docs/transportation/alt-fuel-stations-v1/nearest/): `/api/alt-fuel-stations/v1/nearest`
+- Sign up for a key [here](https://developer.nrel.gov/signup/)
+
+2. The MapQuest Directions API:
+
+- [endpoint](https://developer.mapquest.com/documentation/directions-api/route/get/): `/directions/v2/route`
+- Sign up for a key [here](https://developer.mapquest.com/)
+
+### User Story
 
 We will be searching for the nearest electric charging station to a location selected from a drop down.
 
@@ -49,14 +53,15 @@ I should also see:
   "Turn left onto Lawrence St Destination will be on the left"
 ```
 
-
 ### Further Practice
 
 Do the same challenge above, but instead of creating a view, render json
-  * Create a Rails API application 
-  * Create the endpoint `GET /api/v1/nearest_fuel?location=denver,co
-  * The expected response should look like: 
-    ```json 
+
+- Create a Rails API application
+- Create the endpoint `GET /api/v1/nearest_fuel?location=denver,co
+- The expected response should look like:
+
+    ```json
     {
       "data": {
         "id": "null",
@@ -77,6 +82,5 @@ Do the same challenge above, but instead of creating a view, render json
     }
 
     ```
+
     Note: this example has some made up data, but that's the format you can try to get your response to look like.
-
-
